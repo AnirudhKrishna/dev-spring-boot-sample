@@ -7,6 +7,7 @@ public class RunningSum1DArray {
         int[] nums = {1, 2, 3, 4};
         int size = nums.length;
         int[] sum = new int[size];
+        System.out.println("test with new user");
 
         int output = 0;
         for (int i=0;i<size;i++) {
