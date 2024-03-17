@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        int n = 30;
+        int n = 31;
         List<String> strings = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
