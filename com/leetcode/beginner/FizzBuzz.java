@@ -9,7 +9,7 @@ public class FizzBuzz {
         List<String> strings = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
-            strings = FizzBuzz(i,strings);
+             FizzBuzz(i,strings);
         }
 
         System.out.println(strings);
@@ -19,10 +19,10 @@ public class FizzBuzz {
 
         if (n < 15) {
 
-            FizzBuzz = Fizz(n, FizzBuzz);
+             Fizz(n, FizzBuzz);
 
         } else {
-            FizzBuzz = FizzBuz(n, FizzBuzz);
+            FizzBuz(n, FizzBuzz);
         }
 
 
