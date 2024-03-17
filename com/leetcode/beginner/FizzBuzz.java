@@ -9,49 +9,46 @@ public class FizzBuzz {
         List<String> strings = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
-             FizzBuzz(i,strings);
+             fizzBuzz(i,strings);
         }
 
         System.out.println(strings);
     }
 
-    private static List<String> FizzBuzz(int n, List<String> FizzBuzz) {
+    private static void fizzBuzz(int n, List<String> stringList) {
 
         if (n < 15) {
 
-             Fizz(n, FizzBuzz);
+             fizz(n, stringList);
 
         } else {
-            FizzBuz(n, FizzBuzz);
+            fizzBuz(n, stringList);
         }
 
 
-        return FizzBuzz;
     }
 
-    private static List<String> FizzBuz(int n, List<String> FizzBuzz) {
+    private static void fizzBuz(int n, List<String> stringList) {
         if (n % 3 == 0 && n % 15 != 0) {
-            FizzBuzz.add("Fizz");
+            stringList.add("Fizz");
         } else if (n % 5 == 0 && n % 15 != 0) {
-            FizzBuzz.add("Buzz");
+            stringList.add("Buzz");
         } else if (n % 15 == 0) {
-            FizzBuzz.add("FizzBuzz");
+            stringList.add("FizzBuzz");
         } else {
-            FizzBuzz.add(String.valueOf(n));
+            stringList.add(String.valueOf(n));
         }
-        return FizzBuzz;
     }
 
-    private static List<String> Fizz(int n, List<String> FizzBuzz) {
+    private static void fizz(int n, List<String> stringList) {
         if (n == 1 || n == 2) {
-            FizzBuzz.add(String.valueOf(n));
+            stringList.add(String.valueOf(n));
         } else if (n % 3 == 0) {
-            FizzBuzz.add("Fizz");
+            stringList.add("Fizz");
         } else if (n % 5 == 0) {
-            FizzBuzz.add("Buzz");
+            stringList.add("Buzz");
         } else {
-            FizzBuzz.add(String.valueOf(n));
+            stringList.add(String.valueOf(n));
         }
-        return FizzBuzz;
     }
 }
